@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Pharma EnterPrise</string>
+
+    <string name="txt_select_type">Who Am I?</string>
+
+    <!--fabric key-->
+    <string name="fabric_key">47f6a875addbd12caafc9c78ac5fbfca31e8965f</string>
+
+    <!--LoginActivity-->
+    <string name="hint_email">Enter UserName</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="btn_login_in">Login</string>
+    <string name="err_msg_email">Please Enter Valid UserName</string>
+    <string name="err_msg_password">Please Enter Password</string>
+    <string name="err_msg_confirm_password">Password do not match</string>
+    <string name="err_msg_name">Input your Name</string>
+    <string name="err_msg_Last_name">Input your Last Name</string>
+    <string name="err_msg_mobile_number">Enter 10 digit Mobile Number</string>
+    <string name="err_msg_pincode">Enter 6 digit  Valid Pincode</string>
+    <string name="err_msg_address">Enter a Valid Address</string>
+
+
+    <string name="txt_create_account">Create Account</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+
+
+    <!--Retailer Registration-->
+    <string name="hint_proprietor">Proprietor Ship / Partnership/ Pvt. Ltd. / Ltd. /Others</string>
+    <string name="hint_pan">Pan No</string>
+    <string name="hint_gst">GST No</string>
+    <string name="hint_udr">UDR</string>
+    <string name="hint_username">username</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="hint_register_email">Email ID</string>
+    <string name="hint_shop">Shop / Firm Full Name</string>
+    <string name="hint_mobile_no">Mobile Number</string>
+    <string name="hint_address">Complete Address</string>
+    <string name="hint_pin_code">Pin code</string>
+    <string name="hint_cst">CST / VAT / TIN Number</string>
+    <string name="hint_drug_license_number">Drug License Number </string>
+
+    <string name="hint_register_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password </string>
+    <string name="hint_upload_license">Upload License / Bill Image (upload Maximum 1 Images)</string>
+    <string name="hint_upload_photo">Upload Photo</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+    <string name="btn_submit">Submit</string>
+
+    <string name="hint_sign_in">Sign In</string>
+
+
+    <!--Home Fragment-->
+    <string name="txt_new_order">New Order</string>
+    <string name="txt_my_order">My Order</string>
+    <string name="txt_draft_order">Draft Order</string>
+    <string name="txt_add_distributor">Add Distributor</string>
+    <string name="txt_scheme">Schemes</string>
+
+
+    <!--APP Intro Activity-->
+
+    <string name="action_skip">Skip</string>
+    <string name="btn_start">Start</string>
+    <string name="write_label">Put words to your pictures and leave memories in your blog.</string>
+    <string name="share_label">Share your important moments with friends and family.</string>
+    <string name="follow_label">Follow interesting genres and creators from around the world. </string>
+    <string name="device_text">Today I went to the newly opened Uehara Cafe in Yoyogi Uehara. Because today was the grand opening, there was a good sized crowd there. Recently lots of famous shops from Hawaii one after another are coming to Japan. I personally think these pancakes are so hot right now.</string>
+    <string name="rs">MRP \u20A8 91.13</string>
+
+
+    <!--Registration Doctor-->
+    <string name="hint_email_doctor">Email ID</string>
+    <string name="hint_clinic_name_doctor">Clinic Name</string>
+    <string name="hint_reg_no_doctor">Doctor Register No.</string>
+
+
+    <!--Instiute Name-->
+    <string name="hint_institute_name">Institute Name</string>
+    <string name="rationale_sms">Read External Storage Permission Granted</string>
+    <string name="hint_company_type">Company Type</string>
+    <string name="hint_retailer_name">Retailer name</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="classical">Classical</string>
+    <string name="otc">OTC</string>
+    <string name="patiented">Patiented</string>
+
+    <!--Labels for stepper indicator-->
+    <string-array name="stepLabels">
+        <item>Approval</item>
+        <item>Processed</item>
+        <item>Shipped</item>
+        <item>Delivery</item>
+    </string-array>
+
+</resources>

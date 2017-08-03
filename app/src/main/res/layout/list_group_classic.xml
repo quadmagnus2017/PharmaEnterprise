@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/lblListHeader_classic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/lblListHeader_classic_mrp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblListHeader_classic"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:text="MRP: "
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/lblListHeader_classic_ptr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblListHeader_classic_mrp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/img_indicator"
+            android:singleLine="true"
+            android:text="PTR: "
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/img_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_indicator_right" />
+    </RelativeLayout>
+
+</LinearLayout>

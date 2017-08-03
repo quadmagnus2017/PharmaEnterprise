@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_light_tertiary">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Editext for Search -->
+
+            <com.quadmagnus.pharma.Utility.CustomEditText
+                android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_search_bc"
+                android:drawableLeft="@drawable/icn_search"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/icn_close"
+                android:elevation="2dp"
+                android:hint="Search products.."
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorSignIn"
+                android:textColorHint="@color/grey"
+                android:textSize="16dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/inputSearch">
+                <!-- List View -->
+                <ListView
+                    android:id="@+id/list_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:background="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_title_classic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <!--<expandable listview-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ll_text"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/lvExpClassic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:groupIndicator="@null"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

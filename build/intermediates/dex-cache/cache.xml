@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/premsagar/AndroidStudioProjects/Pharma/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d149f03d7cdcbb856eced4fd4be07489eda3daf9">
+        <dex dex="/home/premsagar/AndroidStudioProjects/Pharma/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c559581331ec4c328abdc1e6a0a561708351279c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/premsagar/AndroidStudioProjects/Pharma/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/premsagar/AndroidStudioProjects/Pharma/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1bea235726916a76e551f9606cb9c84486e343db/classes.dex" />
+    </item>
+
+</items>

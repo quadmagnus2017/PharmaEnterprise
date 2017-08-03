@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal|center_vertical"
+              android:background="@color/grey_light_tertiary"
+              android:gravity="center_vertical|center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_doctor_reg_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/counterOverride"
+            app:counterTextAppearance="@style/counterText">
+
+            <EditText
+                android:id="@+id/input_doctor_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_reg_no_doctor"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingTop="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/license_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icn_add_reg_photo"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <TextView
+            android:id="@+id/submit_third_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_button"
+            android:clickable="false"
+            android:text="@string/submit"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

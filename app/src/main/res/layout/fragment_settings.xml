@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_terms"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/ripple">
+
+            <ImageView
+
+                android:id="@+id/img_terms"
+                style="@style/settingImage"
+                android:src="@drawable/ic_terms" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_terms"
+                android:text="Terms and Condition" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/rl_private_policy"
+            android:background="@android:color/darker_gray"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_private_policy"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/rl_terms"
+            android:background="@drawable/ripple">
+
+            <ImageView
+                android:id="@+id/img_privacy_policy"
+                style="@style/settingImage"
+                android:src="@drawable/ic_padlock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_privacy_policy"
+                android:text="Privacy Policy" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rl_private_policy"
+            android:background="@android:color/darker_gray"></View>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true">
+
+
+            <!-- Editext for Search -->
+
+            <com.quadmagnus.pharma.Utility.CustomEditText
+                android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawableRight="@android:drawable/ic_delete"
+
+                android:hint="Search products.."
+                android:inputType="textVisiblePassword" />
+
+            <!-- List View -->
+            <ListView
+                android:id="@+id/list_view_patent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputSearch"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/layout_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_title_patent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="PERSOL"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_comapny_patent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title_patent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="WALLANCE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_mrp_patent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_comapny_patent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_package_patent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_mrp_patent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Packaging : 20gm"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_sc_name_patent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_mrp_patent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="BENZOLYN PEROXIDE "
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
